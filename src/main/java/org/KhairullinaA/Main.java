@@ -16,10 +16,8 @@ public class Main {
         int transactionCount = 0; // Счетчик введенных транзакций
 
         // Чтение информации о транзакциях в бесконечном цикле
-        while (true) {
-            if (transactionCount >= 5) {
-                break; // Выход из цикла, если введены данные по 5 транзакциям
-            }
+
+        while (transactionCount < 5) {
 
             System.out.println("Введите информацию для транзакции " + (transactionCount + 1) + ":");
 
